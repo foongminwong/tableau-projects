@@ -670,6 +670,12 @@
             <column-instance column='[CASE_RECEIVED_DATE]' derivation='None' name='[none:CASE_RECEIVED_DATE:nk]' pivot='key' type='nominal' />
             <column-instance column='[JOB_TITLE_SUBGROUP]' derivation='None' name='[none:JOB_TITLE_SUBGROUP:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.1utnecb1qhtc0p0zmcg000x73e05].[none:CASE_RECEIVED_DATE:nk]'>
+            <groupfilter function='level-members' level='[none:CASE_RECEIVED_DATE:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1utnecb1qhtc0p0zmcg000x73e05].[none:CASE_RECEIVED_DATE:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style />
