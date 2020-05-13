@@ -1,0 +1,739 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0427.1803                               -->
+<workbook original-version='18.1' source-build='2020.1.3 (20201.20.0427.1803)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dog_id_max_ranks (dognition_data_aggregated_by_dogid)' inline='true' name='federated.17prrcj0vm6gxm14sh7kx0ghtyz6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dognition_data_aggregated_by_dogid' name='excel-direct.0u2outh0duiehh1dxfz180afx2nx'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/foongmin/Desktop/tableau-projects/Data Visualization and Communication with Tableau/dognition/dognition_data_aggregated_by_dogid.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0u2outh0duiehh1dxfz180afx2nx' name='dog_id_max_ranks' table='[dog_id_max_ranks$]' type='table'>
+          <columns gridOrigin='A1:AD10001:no:A1:AD2147483647:0' header='yes' outcome='2'>
+            <column datatype='string' name='Dog ID' ordinal='0' />
+            <column datatype='integer' name='Total Tests Completed' ordinal='1' />
+            <column datatype='real' name='Mean ITI (days)' ordinal='2' />
+            <column datatype='real' name='Mean ITI (minutes)' ordinal='3' />
+            <column datatype='real' name='Median ITI (days)' ordinal='4' />
+            <column datatype='real' name='Median ITI (minutes)' ordinal='5' />
+            <column datatype='real' name='Time diff between first and last game (days)' ordinal='6' />
+            <column datatype='real' name='Time diff between first and last game (minutes)' ordinal='7' />
+            <column datatype='string' name='User ID' ordinal='8' />
+            <column datatype='string' name='Gender' ordinal='9' />
+            <column datatype='integer' name='Birthday' ordinal='10' />
+            <column datatype='string' name='Breed' ordinal='11' />
+            <column datatype='string' name='Breed_Type' ordinal='12' />
+            <column datatype='string' name='Breed_Group' ordinal='13' />
+            <column datatype='integer' name='Weight' ordinal='14' />
+            <column datatype='integer' name='Dog_Fixed' ordinal='15' />
+            <column datatype='integer' name='DNA_Tested' ordinal='16' />
+            <column datatype='string' name='Dimension' ordinal='17' />
+            <column datatype='integer' name='Sign_in_Count' ordinal='18' />
+            <column datatype='integer' name='Max_Dogs' ordinal='19' />
+            <column datatype='integer' name='Membership_ID' ordinal='20' />
+            <column datatype='integer' name='Subscribed' ordinal='21' />
+            <column datatype='string' name='City' ordinal='22' />
+            <column datatype='string' name='State' ordinal='23' />
+            <column datatype='string' name='Zip' ordinal='24' />
+            <column datatype='string' name='Country' ordinal='25' />
+            <column datatype='integer' name='Exclude' ordinal='26' />
+            <column datatype='integer' name='Free_Start_User' ordinal='27' />
+            <column datatype='datetime' name='Last_Active_At' ordinal='28' />
+            <column datatype='integer' name='Membership_Type' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Dog ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dog ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dog ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Tests Completed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Tests Completed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Total Tests Completed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean ITI (days)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean ITI (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Mean ITI (days)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean ITI (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean ITI (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Mean ITI (minutes)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median ITI (days)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Median ITI (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Median ITI (days)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median ITI (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Median ITI (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Median ITI (minutes)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time diff between first and last game (days)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time diff between first and last game (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Time diff between first and last game (days)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time diff between first and last game (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time diff between first and last game (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Time diff between first and last game (minutes)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[User ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>User ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birthday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Birthday]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Birthday</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed_Type]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed_Type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed_Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed_Group]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed_Group</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dog_Fixed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dog_Fixed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dog_Fixed</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DNA_Tested</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DNA_Tested]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>DNA_Tested</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dimension</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dimension]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dimension</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sign_in_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sign_in_Count]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Sign_in_Count</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_Dogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_Dogs]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Max_Dogs</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Membership_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Membership_ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Membership_ID</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subscribed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subscribed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Subscribed</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RMY_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exclude</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exclude]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Exclude</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free_Start_User</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Free_Start_User]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Free_Start_User</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last_Active_At</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Last_Active_At]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Last_Active_At</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Membership_Type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Membership_Type]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Membership_Type</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AD10001:no:A1:AD2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Dog_ID_Distinct' datatype='integer' name='[Calculation_502995833558597633]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Dog ID])' />
+      </column>
+      <column caption='User_ID_Distinct' datatype='integer' name='[Calculation_502995833559674882]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([User ID])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Dog ID (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Dog ID]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;fd27b86c-7144-11e5-ba71-058fbc01cf0b, fd27ba1a-7144-11e5-ba71-058fbc01cf0b, fd27e9a4-7144-11e5-ba71-058fbc01cf0b and 15 more&quot;'>
+            <value>&quot;fd27b86c-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd27ba1a-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd27e9a4-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd27ed46-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd3ccf2c-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd3cf718-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd3d1b44-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd3d587a-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd3fbfe8-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd3fd140-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd4054ee-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd40e206-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd41c400-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd41f056-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd4277a6-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd42e33a-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd453b6c-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+            <value>&quot;fd51b784-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Dog ID]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Membership_ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.555725' measure-ordering='alphabetic' measure-percentage='0.444275' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dog_id_max_ranks (dognition_data_aggregated_by_dogid)' name='federated.17prrcj0vm6gxm14sh7kx0ghtyz6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17prrcj0vm6gxm14sh7kx0ghtyz6'>
+            <column datatype='string' name='[Dog ID (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Dog ID]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;fd27b86c-7144-11e5-ba71-058fbc01cf0b, fd27ba1a-7144-11e5-ba71-058fbc01cf0b, fd27e9a4-7144-11e5-ba71-058fbc01cf0b and 15 more&quot;'>
+                  <value>&quot;fd27b86c-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd27ba1a-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd27e9a4-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd27ed46-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd3ccf2c-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd3cf718-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd3d1b44-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd3d587a-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd3fbfe8-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd3fd140-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd4054ee-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd40e206-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd41c400-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd41f056-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd4277a6-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd42e33a-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd453b6c-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                  <value>&quot;fd51b784-7144-11e5-ba71-058fbc01cf0b&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Dog ID]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sign_in_Count]' role='measure' type='quantitative' />
+            <column-instance column='[Dog ID]' derivation='None' name='[none:Dog ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sign_in_Count]' derivation='Sum' name='[sum:Sign_in_Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17prrcj0vm6gxm14sh7kx0ghtyz6].[sum:Sign_in_Count:qk]' field-type='quantitative' max='758' min='-60' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.17prrcj0vm6gxm14sh7kx0ghtyz6].[none:Dog ID:nk]' />
+              <color column='[federated.17prrcj0vm6gxm14sh7kx0ghtyz6].[Dog ID (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17prrcj0vm6gxm14sh7kx0ghtyz6].[sum:Sign_in_Count:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{6F220EE8-5408-4537-8F06-8ACE9C718ED3}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17prrcj0vm6gxm14sh7kx0ghtyz6].[Dog ID (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17prrcj0vm6gxm14sh7kx0ghtyz6].[none:Country:nk]</field>
+            <field>[federated.17prrcj0vm6gxm14sh7kx0ghtyz6].[none:Dog ID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7F668640-C9ED-41C5-A7BA-59755DB0D291}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='153'>
+      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
+      QAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
