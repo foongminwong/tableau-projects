@@ -489,7 +489,7 @@
       <column datatype='string' name='[WORK_CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
       <column datatype='string' name='[WORK_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column datatype='string' name='[WORK_STATE_ABBREVIATION]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.684989' measure-ordering='alphabetic' measure-percentage='0.245243' parameter-percentage='0.0697674' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.733615' measure-ordering='alphabetic' measure-percentage='0.196617' parameter-percentage='0.0697674' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
       </semantic-values>
@@ -15318,6 +15318,26 @@
       </table>
       <simple-id uuid='{348E29D5-C1EE-43C7-9733-118CCC93FFBC}' />
     </worksheet>
+    <worksheet name='Median Wage per Visa'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D1B94953-5463-4582-905B-E36CA9C5DF85}' />
+    </worksheet>
     <worksheet name='Using Paramters to Define Top States'>
       <table>
         <view>
@@ -15490,7 +15510,7 @@
             <zone h='82676' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='16494'>
               <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
-                  <story-point captured-sheet='' id='1' />
+                  <story-point caption='I took into consideration whether visa class would affect my salary' captured-sheet='' id='1' />
                 </story-points>
               </flipboard>
             </zone>
@@ -15713,10 +15733,33 @@
       <active id='-1' />
       <simple-id uuid='{A31C34FA-F0E4-4BF0-A97B-DB24AACCFE56}' />
     </window>
-    <window class='dashboard' maximized='true' name='Story 1'>
+    <window class='dashboard' name='Story 1'>
       <viewpoints />
-      <active id='-1' />
+      <active id='4' />
       <simple-id uuid='{6800034E-2A2E-4D27-94BC-A6572F47A3ED}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Median Wage per Visa'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4554509F-123A-4890-9CAB-E1B7F55E487C}' />
     </window>
   </windows>
 </workbook>
